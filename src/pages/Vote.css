@@ -1,0 +1,98 @@
+.pageIdentify{
+    max-width: 100%;
+    padding:20px;
+    background-color: gray;
+    position: sticky;
+    top: 0px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    z-index: 999;
+}
+
+.feedTweet {
+    max-width: 100%;
+    border-bottom: 1px solid rgb(63, 63, 63);
+    padding: 20px;
+    color: white;
+    justify-content: space-between;
+    display: flex;
+}
+
+.feedTweet:hover {
+    background-color: #c3e6c9;
+}
+
+.completeTweet {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    gap:10px;
+    width:89%;
+    gap:10px;
+}
+
+.interactions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: start;
+    gap: 150px;
+}
+
+.interactionNums {
+    color:#3f3f3f;
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 1000px;
+}
+
+.interactionNums:hover {
+    cursor:pointer;
+    background-color: #1da0f20b;
+}
+
+.who {
+    display: flex;
+    color: black;
+    gap: 10px;
+    font-weight: 600;
+    align-items: center;
+}
+
+.accWhen {
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
+}
+
+.tweetContent{
+    display: flex;
+    color: black;
+    justify-content: start;
+    flex-direction: column;
+    gap:10px;
+}
+
+.tweetImg {
+    width: 98%;
+    border-radius: 10px;
+}
+
+.vote {
+    background-color: #f2791d;
+    padding: 10px 20px;
+    border-radius: 1000px;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.voteOptions {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}

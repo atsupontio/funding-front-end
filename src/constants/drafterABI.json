@@ -1,0 +1,197 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "ideaId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "inventor",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "votedNumber",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "goalRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "targetMoney",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "submissionTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "timelimit",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "explanation",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "investmentForm",
+            "type": "string"
+          },
+          {
+            "internalType": "bool",
+            "name": "votingpossible",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "votercheck",
+            "type": "bool"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct Idea.ideaState",
+        "name": "createdIdea",
+        "type": "tuple"
+      }
+    ],
+    "name": "IdeaPosted",
+    "type": "event"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "fallback"
+  },
+  {
+    "inputs": [],
+    "name": "getId",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_explanation",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_timeLimit",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_targetMoney",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "_investmentForm",
+        "type": "string"
+      }
+    ],
+    "name": "postIdea",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_ideaId",
+        "type": "uint256"
+      }
+    ],
+    "name": "viewIdea",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint256",
+            "name": "ideaId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "inventor",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "votedNumber",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "goalRate",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "targetMoney",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "submissionTime",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "timelimit",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "explanation",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "investmentForm",
+            "type": "string"
+          },
+          {
+            "internalType": "bool",
+            "name": "votingpossible",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "votercheck",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct Idea.ideaState",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
+  }
+]
